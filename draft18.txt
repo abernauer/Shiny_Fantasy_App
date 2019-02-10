@@ -1,0 +1,756 @@
+﻿"
+Kershawshank Redemption
+NO.
+PLAYER
+BID AMOUNT
+12
+Bryce Harper Wsh, RF
+$0
+24
+Clayton Kershaw LAD, SP
+$0
+25
+Mookie Betts Bos, RF
+$45
+39
+Robinson Cano NYM, 2B
+$28
+69
+Jake Arrieta Phi, SP
+$36
+82
+Alex Wood Cin, SP
+$30
+92
+Joey Gallo Tex, 3B
+$13
+95
+Gio Gonzalez Mil, SP
+$16
+104
+Travis Shaw Mil, 3B
+$10
+135
+Jon Gray Col, SP
+$4
+147
+Kevin Gausman Atl, SP
+$3
+151
+Felipe Vazquez Pit, RP
+$4
+156
+Cody Allen Cle, RP
+$3
+157
+Jake Lamb Ari, 3B
+$3
+179
+Jay Bruce Sea, RF
+$1
+190
+Ian Kinsler SD, 2B
+$1
+199
+Addison Russell ChC, SS
+$1
+206
+Yonder Alonso CWS, 1B
+$1
+213
+Yasmani Grandal LAD, C
+$1
+"
+"
+Choo Talkin To Me?
+NO.
+PLAYER
+BID AMOUNT
+1
+Max Scherzer Wsh, SP
+$0
+13
+Joey Votto Cin, 1B
+$0
+37
+Dallas Keuchel Hou, SP
+$37
+45
+Justin Verlander Hou, SP
+$37
+49
+Buster Posey SF, C
+$19
+61
+Evan Longoria SF, 3B
+$9
+65
+Ryan Braun Mil, LF
+$14
+73
+Javier Baez ChC, SS
+$20
+85
+Eduardo Nunez Bos, 2B
+$14
+97
+Whit Merrifield KC, 2B
+$16
+109
+Corey Knebel Mil, RP
+$9
+116
+Eric Hosmer SD, 1B
+$12
+133
+Brad Hand Cle, RP
+$6
+148
+Wade Davis Col, RP
+$2
+191
+Michael Conforto NYM, LF
+$1
+200
+Ronald Acuna Jr. Atl, CF
+$1
+207
+Odubel Herrera Phi, CF
+$1
+214
+Taijuan Walker Ari, SP
+$1
+220
+Dexter Fowler StL, CF
+$1
+"
+"
+Team Beavens
+NO.
+PLAYER
+BID AMOUNT
+5
+Trea Turner Wsh, SS
+$0
+17
+Corey Kluber Cle, SP
+$0
+41
+Kenley Jansen LAD, RP
+$27
+44
+Anthony Rendon Wsh, 3B
+$27
+53
+Gary Sanchez NYY, C
+$28
+55
+Eddie Rosario Min, LF
+$13
+56
+Alex Bregman Hou, SS
+$27
+67
+Carlos Carrasco Cle, SP
+$48
+70
+Jon Lester ChC, SP
+$12
+132
+Ender Inciarte Atl, CF
+$5
+149
+Logan Morrison Min, 1B
+$3
+161
+Chris Taylor LAD, 2B
+$3
+184
+Trey Mancini Bal, 1B
+$1
+195
+Andrew Miller StL, RP
+$1
+203
+Kyle Schwarber ChC, LF
+$1
+210
+Kendrys Morales Tor, DH
+$1
+217
+Jorge Polanco Min, SS
+$1
+223
+Kenta Maeda LAD, SP
+$1
+226
+Max Kepler Min, RF
+$1
+"
+"
+IâM Tyrone!
+NO.
+PLAYER
+BID AMOUNT
+3
+Manny Machado LAD, 3B
+$0
+15
+Noah Syndergaard NYM, SP
+$0
+26
+Freddie Freeman Atl, 1B
+$34
+29
+Elvis Andrus Tex, SS
+$22
+46
+Cody Bellinger LAD, 1B
+$45
+62
+Jonathan Schoop Min, 2B
+$22
+72
+Robbie Ray Ari, SP
+$31
+75
+Rougned Odor Tex, 2B
+$15
+87
+Marwin Gonzalez Hou, SS
+$16
+111
+Domingo Santana Sea, RF
+$1
+134
+Willson Contreras ChC, C
+$6
+171
+Jonathan Lucroy LAA, C
+$1
+182
+Brandon Morrow ChC, RP
+$1
+193
+Danny Duffy KC, SP
+$1
+201
+Chase Anderson Mil, SP
+$1
+208
+Jake Faria TB, SP
+$1
+215
+Mark Trumbo Bal, RF
+$1
+221
+Kelvin Herrera Wsh, RP
+$1
+224
+Mike Leake Sea, SP
+$1
+"
+"
+Team McKenna
+NO.
+PLAYER
+BID AMOUNT
+11
+Mike Trout LAA, CF
+$0
+23
+Carlos Martinez StL, SP
+$0
+33
+Charlie Blackmon Col, CF
+$48
+74
+Kyle Seager Sea, 3B
+$13
+77
+Salvador Perez KC, C
+$19
+79
+Edwin Encarnacion Sea, 1B
+$29
+80
+Craig Kimbrel Bos, RP
+$18
+89
+A.J. Pollock Ari, CF
+$17
+100
+Trevor Bauer Cle, SP
+$18
+105
+Matt Carpenter StL, 1B
+$6
+107
+Shohei Ohtani LAA, SP
+$19
+136
+Rich Hill LAD, SP
+$3
+141
+Josh Bell Pit, 1B
+$3
+153
+Sean Doolittle Wsh, RP
+$2
+189
+Yoan Moncada CWS, 2B
+$1
+198
+Eugenio Suarez Cin, 3B
+$1
+205
+Garrett Richards SD, SP
+$1
+212
+Jose Peraza Cin, SS
+$1
+219
+Starlin Castro Mia, 2B
+$1
+"
+"
+Bartolo's Vatos
+NO.
+PLAYER
+BID AMOUNT
+10
+Kris Bryant ChC, 3B
+$0
+22
+Chris Sale Bos, SP
+$0
+27
+Josh Donaldson Atl, 3B
+$33
+32
+Justin Upton LAA, LF
+$26
+43
+Marcell Ozuna StL, LF
+$33
+58
+Chris Archer Pit, SP
+$36
+84
+James Paxton NYY, SP
+$20
+94
+Yasiel Puig Cin, RF
+$16
+106
+Aroldis Chapman NYY, RP
+$12
+118
+Josh Harrison Pit, 2B
+$3
+130
+Brandon Crawford SF, SS
+$1
+137
+Carlos Santana Cle, 1B
+$5
+142
+Yangervis Solarte Tor, SS
+$1
+154
+Jameson Taillon Pit, SP
+$1
+166
+Yadier Molina StL, C
+$3
+177
+Andrelton Simmons LAA, SS
+$1
+180
+Ryan Zimmerman Wsh, 1B
+$2
+188
+Rick Porcello Bos, SP
+$1
+197
+Brad Peacock Hou, RP
+$1
+"
+"
+Shane Beliebers
+NO.
+PLAYER
+BID AMOUNT
+9
+Francisco Lindor Cle, SS
+$0
+21
+Jose Ramirez Cle, 2B
+$0
+38
+Brian Dozier LAD, 2B
+$36
+48
+Christian Yelich Mil, CF
+$26
+54
+Kevin Kiermaier TB, CF
+$14
+59
+Billy Hamilton KC, CF
+$16
+64
+Luis Severino NYY, SP
+$52
+68
+David Price Bos, SP
+$18
+71
+Jeff Samardzija SF, SP
+$12
+110
+Ian Desmond Col, 1B
+$10
+129
+Ozzie Albies Atl, 2B
+$6
+169
+Wilson Ramos NYM, C
+$2
+176
+Justin Bour LAA, 1B
+$1
+178
+Orlando Arcia Mil, SS
+$2
+187
+Matt Chapman Oak, 3B
+$1
+196
+Lucas Giolito CWS, SP
+$1
+204
+Charlie Morton TB, SP
+$1
+211
+Blake Parker LAA, RP
+$1
+218
+Hector Neris Phi, RP
+$1
+"
+"
+A Rod In My Pants
+NO.
+PLAYER
+BID AMOUNT
+7
+Jose Abreu CWS, 1B
+$0
+19
+Gerrit Cole Hou, SP
+$0
+40
+Corey Seager LAD, SS
+$30
+63
+DJ LeMahieu Col, 2B
+$20
+91
+Justin Turner LAD, 3B
+$26
+93
+Miguel Sano Min, 3B
+$18
+99
+Byron Buxton Min, CF
+$6
+102
+Didi Gregorius NYY, SS
+$20
+108
+Tommy Pham TB, LF
+$19
+115
+J.T. Realmuto Mia, C
+$7
+120
+Andrew Benintendi Bos, LF
+$10
+125
+Nicholas Castellanos Det, 3B
+$10
+145
+Manuel Margot SD, CF
+$2
+146
+Raisel Iglesias Cin, RP
+$2
+155
+Matt Olson Oak, 1B
+$4
+163
+Dylan Bundy Bal, SP
+$3
+164
+Greg Holland Wsh, RP
+$3
+167
+Nomar Mazara Tex, RF
+$4
+186
+Michael Fulmer Det, SP
+$1
+"
+"
+Sniffers Row 2018
+NO.
+PLAYER
+BID AMOUNT
+4
+Nolan Arenado Col, 3B
+$0
+16
+Giancarlo Stanton NYY, RF
+$0
+30
+Aaron Judge NYY, RF
+$42
+31
+Madison Bumgarner SF, SP
+$46
+34
+Stephen Strasburg Wsh, SP
+$47
+81
+Miguel Cabrera Det, 1B
+$12
+88
+Kyle Hendricks ChC, SP
+$24
+112
+Jose Berrios Min, SP
+$7
+124
+Luis Castillo Cin, SP
+$10
+160
+Justin Smoak Tor, 1B
+$3
+183
+Steven Souza Jr. Ari, RF
+$1
+194
+Josh Reddick Hou, RF
+$1
+202
+Mark Melancon SF, RP
+$1
+209
+Danny Salazar Cle, SP
+$1
+216
+Archie Bradley Ari, RP
+$1
+222
+Tim Anderson CWS, SS
+$1
+225
+Jason Kipnis Cle, 2B
+$1
+227
+Marcus Semien Oak, SS
+$1
+228
+Brian McCann Atl, C
+$1
+"
+"
+Team Christy
+NO.
+PLAYER
+BID AMOUNT
+2
+Paul Goldschmidt StL, 1B
+$0
+14
+Khris Davis Oak, LF
+$0
+35
+Luke Weaver Ari, SP
+$15
+36
+Carlos Correa Hou, SS
+$39
+42
+Bartolo Colon Tex, SP
+$2
+47
+Sonny Gray NYY, SP
+$18
+52
+Dee Gordon Sea, 2B
+$29
+86
+Mike Moustakas Mil, 3B
+$18
+98
+Andrew McCutchen Phi, CF
+$17
+113
+Adam Jones Bal, CF
+$15
+121
+Trevor Story Col, SS
+$9
+139
+Edwin Diaz NYM, RP
+$4
+158
+Chris Davis Bal, 1B
+$3
+159
+Zack Godley Ari, SP
+$3
+162
+Gregory Polanco Pit, RF
+$3
+165
+Marcus Stroman Tor, SP
+$3
+168
+Brett Gardner NYY, LF
+$2
+181
+Jeurys Familia NYM, RP
+$1
+192
+Welington Castillo CWS, C
+$1
+"
+"
+Long Ball Longo
+NO.
+PLAYER
+BID AMOUNT
+6
+Jose Altuve Hou, 2B
+$0
+18
+Nelson Cruz Min, DH
+$0
+28
+Anthony Rizzo ChC, 1B
+$34
+51
+Wil Myers SD, 1B
+$16
+66
+Aaron Nola Phi, SP
+$21
+76
+Jacob deGrom NYM, SP
+$51
+78
+Roberto Osuna Hou, RP
+$9
+83
+Jose Quintana ChC, SP
+$19
+90
+Delino DeShields Tex, LF
+$6
+96
+Starling Marte Pit, LF
+$9
+119
+Paul DeJong StL, SS
+$7
+138
+Alex Colome CWS, RP
+$3
+144
+Lance McCullers Jr. Hou, SP
+$3
+150
+Rafael Devers Bos, 3B
+$6
+172
+Adam Duvall Atl, LF
+$2
+173
+Ian Happ ChC, 2B
+$2
+174
+Greg Bird NYY, 1B
+$1
+175
+Johnny Cueto SF, SP
+$3
+185
+Mike Zunino TB, C
+$1
+"
+"
+The Wright Players
+NO.
+PLAYER
+BID AMOUNT
+8
+J.D. Martinez Bos, RF
+$0
+20
+George Springer Hou, CF
+$0
+50
+Yu Darvish ChC, SP
+$27
+57
+Rhys Hoskins Phi, 1B
+$26
+60
+Zack Greinke Ari, SP
+$25
+101
+Eric Thames Mil, 1B
+$6
+103
+Adrian Beltre Tex, 3B
+$10
+114
+Xander Bogaerts Bos, SS
+$15
+117
+Masahiro Tanaka NYY, SP
+$7
+122
+Yoenis Cespedes NYM, LF
+$15
+123
+Evan Gattis Hou, C
+$8
+126
+Jean Segura Phi, SS
+$7
+127
+Lance Lynn Tex, SP
+$8
+128
+Daniel Murphy Col, 2B
+$20
+131
+Lorenzo Cain Mil, CF
+$10
+140
+Todd Frazier NYM, 3B
+$5
+143
+Ken Giles Tor, RP
+$4
+152
+Adam Eaton Wsh, CF
+$3
+170
+Arodys Vizcaino Atl, RP
+$2
+"
