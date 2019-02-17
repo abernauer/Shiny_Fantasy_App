@@ -617,6 +617,74 @@ structure(kershank_df)</code></pre>
 ## 17 199 Addison Russell ChC, SS         $1
 ## 18 206   Yonder Alonso CWS, 1B         $1
 ## 19 213  Yasmani Grandal LAD, C         $1</code></pre>
+<pre class="r"><code>picks_choo_talkin &lt;- as.integer(pick_2[20:38])
+
+bids_choo_talkin &lt;- bids[20:38]
+
+bids_choo_talkin</code></pre>
+<pre><code>##  [1] &quot;$0&quot;  &quot;$0&quot;  &quot;$37&quot; &quot;$37&quot; &quot;$19&quot; &quot;$9&quot;  &quot;$14&quot; &quot;$20&quot; &quot;$14&quot; &quot;$16&quot; &quot;$9&quot; 
+## [12] &quot;$12&quot; &quot;$6&quot;  &quot;$2&quot;  &quot;$1&quot;  &quot;$1&quot;  &quot;$1&quot;  &quot;$1&quot;  &quot;$1&quot;</code></pre>
+<pre class="r"><code>players_choo_talkin &lt;- c(starting_pitcher[7], first[2], starting_pitcher[8], starting_pitcher[9], catcher[2], third[4], left_field[1], SS[2], second[3], second[4], relief_pitcher[3], first[3], relief_pitcher[4], relief_pitcher[5], left_field[2], center_field[1], center_field[2], starting_pitcher[10], center_field[3])
+
+Choo_talkin_df &lt;- data.frame(NO. = picks_choo_talkin,
+                             PLAYER = players_choo_talkin, 
+                             BID_AMOUNT = bids_choo_talkin
+                             )
+Choo_talkin_df </code></pre>
+<pre><code>##    NO.                   PLAYER BID_AMOUNT
+## 1    1     Max Scherzer Wsh, SP         $0
+## 2   13       Joey Votto Cin, 1B         $0
+## 3   37   Dallas Keuchel Hou, SP        $37
+## 4   45 Justin Verlander Hou, SP        $37
+## 5   49       Buster Posey SF, C        $19
+## 6   61     Evan Longoria SF, 3B         $9
+## 7   65       Ryan Braun Mil, LF        $14
+## 8   73      Javier Baez ChC, SS        $20
+## 9   85    Eduardo Nunez Bos, 2B        $14
+## 10  97   Whit Merrifield KC, 2B        $16
+## 11 109     Corey Knebel Mil, RP         $9
+## 12 116       Eric Hosmer SD, 1B        $12
+## 13 133        Brad Hand Cle, RP         $6
+## 14 148       Wade Davis Col, RP         $2
+## 15 191 Michael Conforto NYM, LF         $1
+## 16 200 Ronald Acuna Jr. Atl, CF         $1
+## 17 207   Odubel Herrera Phi, CF         $1
+## 18 214   Taijuan Walker Ari, SP         $1
+## 19 220    Dexter Fowler StL, CF         $1</code></pre>
+<pre class="r"><code>picks_beavens &lt;- as.integer(pick_2[39:57])
+
+picks_beavens</code></pre>
+<pre><code>##  [1]   5  17  41  44  53  55  56  67  70 132 149 161 184 195 203 210 217
+## [18] 223 226</code></pre>
+<pre class="r"><code>bids_beavens &lt;- bids[39:57]
+
+players_beavens &lt;- c(SS[3], starting_pitcher[11], relief_pitcher[6], third[5], catcher[3], left_field[3], SS[4], starting_pitcher[12], starting_pitcher[13], center_field[4], first[4], second[5], first[5], relief_pitcher[7], left_field[4], designated_hitter[2], SS[5], starting_pitcher[14], RF[4])
+
+team_beavens_df &lt;- data.frame(NO. = picks_beavens, 
+                              PLAYER = players_beavens, 
+                              BID_AMOUNT = bids_beavens)
+
+team_beavens_df</code></pre>
+<pre><code>##    NO.                  PLAYER BID_AMOUNT
+## 1    5     Trea Turner Wsh, SS         $0
+## 2   17    Corey Kluber Cle, SP         $0
+## 3   41   Kenley Jansen LAD, RP        $27
+## 4   44  Anthony Rendon Wsh, 3B        $27
+## 5   53     Gary Sanchez NYY, C        $28
+## 6   55   Eddie Rosario Min, LF        $13
+## 7   56    Alex Bregman Hou, SS        $27
+## 8   67 Carlos Carrasco Cle, SP        $48
+## 9   70      Jon Lester ChC, SP        $12
+## 10 132  Ender Inciarte Atl, CF         $5
+## 11 149  Logan Morrison Min, 1B         $3
+## 12 161    Chris Taylor LAD, 2B         $3
+## 13 184    Trey Mancini Bal, 1B         $1
+## 14 195   Andrew Miller StL, RP         $1
+## 15 203  Kyle Schwarber ChC, LF         $1
+## 16 210     Nelson Cruz Min, DH         $1
+## 17 217   Jorge Polanco Min, SS         $1
+## 18 223     Kenta Maeda LAD, SP         $1
+## 19 226      Max Kepler Min, RF         $1</code></pre>
 
 
 

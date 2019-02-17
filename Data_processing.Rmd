@@ -108,3 +108,31 @@ kershank_df <- data.frame( NO. = picks_kershaw,
   
 )
 structure(kershank_df)
+
+picks_choo_talkin <- as.integer(pick_2[20:38])
+
+bids_choo_talkin <- bids[20:38]
+
+bids_choo_talkin
+
+players_choo_talkin <- c(starting_pitcher[7], first[2], starting_pitcher[8], starting_pitcher[9], catcher[2], third[4], left_field[1], SS[2], second[3], second[4], relief_pitcher[3], first[3], relief_pitcher[4], relief_pitcher[5], left_field[2], center_field[1], center_field[2], starting_pitcher[10], center_field[3])
+
+Choo_talkin_df <- data.frame(NO. = picks_choo_talkin,
+                             PLAYER = players_choo_talkin, 
+                             BID_AMOUNT = bids_choo_talkin
+                             )
+Choo_talkin_df 
+
+picks_beavens <- as.integer(pick_2[39:57])
+
+picks_beavens
+
+bids_beavens <- bids[39:57]
+
+players_beavens <- c(SS[3], starting_pitcher[11], relief_pitcher[6], third[5], catcher[3], left_field[3], SS[4], starting_pitcher[12], starting_pitcher[13], center_field[4], first[4], second[5], first[5], relief_pitcher[7], left_field[4], designated_hitter[2], SS[5], starting_pitcher[14], RF[4])
+
+team_beavens_df <- data.frame(NO. = picks_beavens, 
+                              PLAYER = players_beavens, 
+                              BID_AMOUNT = bids_beavens)
+
+team_beavens_df
