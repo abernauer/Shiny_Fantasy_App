@@ -1,0 +1,55 @@
+---
+title: "R_docker"
+author: "Andrew Bernauer"
+date: "February 16, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(readr)
+library()
+path <- file.choose()
+parse_it <- read_lines(path)
+
+team_1 <- parse_it[2]
+
+pick <- parse_it[3]
+
+player_and_position <- parse_it[4]
+
+bidding <- parse_it[5]
+harper <- stringr::str_subset(string = parse_it, pattern = 'Bryce Harper')
+
+bids <- str_subset(string = parse_it, pattern = regex('\\$[0-9]')) 
+bids
+
+picks <- str_subset(string = parse_it, pattern = fixed('(?<!\\$)[0-9]'))
+
+RF <- str_subset(string = parse_it, pattern = regex('RF'))
+
+RF
+
+SS <- str_subset(string = parse_it, pattern = regex('SS'))
+
+SS
+
+first <- str_subset(string = parse_it, pattern = regex('1B')) 
+
+first
+
+second <- str_subset(string = parse_it, pattern = regex('2B'))
+ 
+second
+
+third <- str_subset(string = parse_it, pattern = regex('3B'))
+
+third
+
+catcher <- str_subset(string = parse_it, pattern = regex('C'))
+
+catcher
+
