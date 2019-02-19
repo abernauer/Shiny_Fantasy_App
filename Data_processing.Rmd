@@ -104,7 +104,8 @@ players_kershaw
 
 kershank_df <- data.frame( NO. = picks_kershaw,
                               PLAYER = players_kershaw,
-                              BID_AMOUNT = bids_kershaw
+                              BID_AMOUNT = bids_kershaw,
+                           stringsAsFactors = FALSE
   
 )
 structure(kershank_df)
@@ -119,9 +120,12 @@ players_choo_talkin <- c(starting_pitcher[7], first[2], starting_pitcher[8], sta
 
 Choo_talkin_df <- data.frame(NO. = picks_choo_talkin,
                              PLAYER = players_choo_talkin, 
-                             BID_AMOUNT = bids_choo_talkin
+                             BID_AMOUNT = bids_choo_talkin,
+                             stringsAsFactors = FALSE
                              )
 Choo_talkin_df 
+
+Choo_talkin_tibble <- as_tibble(Choo_talkin_df)
 
 picks_beavens <- as.integer(pick_2[39:57])
 
@@ -133,6 +137,84 @@ players_beavens <- c(SS[3], starting_pitcher[11], relief_pitcher[6], third[5], c
 
 team_beavens_df <- data.frame(NO. = picks_beavens, 
                               PLAYER = players_beavens, 
-                              BID_AMOUNT = bids_beavens)
+                              BID_AMOUNT = bids_beavens,
+                              stringsAsFactors = FALSE)
 
 team_beavens_df
+
+picks_Tyrone <- as.integer(pick_2[58:76])
+
+bids_Tyrone <- bids[58:76]
+
+players_Tyrone <- c(third[6], starting_pitcher[15], first[6], SS[6],  first[7], second[6], starting_pitcher[16], second[7], SS[7], RF[5], catcher[4], catcher[5], relief_pitcher[8], starting_pitcher[17], starting_pitcher[18], starting_pitcher[19], RF[6], relief_pitcher[9], starting_pitcher[20])
+
+tyrone_df <- data.frame(NO. = picks_Tyrone, 
+                       PLAYER = players_Tyrone,
+                       BID_AMOUNT = bids_Tyrone,
+                      stringsAsFactors = FALSE)
+
+tyrone_df
+
+picks_Mckenna <- as.integer(pick_2[77:95])
+
+bids_Mckenna <- bids[77:95] 
+
+players_Mckenna <- c(center_field[5], starting_pitcher[21], center_field[6], third[7], catcher[6], first[8], relief_pitcher[10], center_field[7], starting_pitcher[22], first[9], starting_pitcher[23], starting_pitcher[24], first[10], relief_pitcher[11], second[8], third[8], starting_pitcher[25], SS[8], second[9])
+
+
+Mckenna_df <- data.frame(NO. = picks_Mckenna,
+                         PlAYER = players_Mckenna, 
+                         BID_AMOUNT = bids_Mckenna, 
+                         stringsAsFactors = FALSE)
+
+Mckenna_df
+
+Bartolos_votos_picks <- as.integer(pick_2[96:114])
+Bartolos_votos_picks
+
+Bartolos_votos_bids <- bids[96:114]
+
+Bartolos_votos_players <- c(third[9], starting_pitcher[26], third[10], left_field[5], left_field[6], starting_pitcher[27], starting_pitcher[28], RF[7], relief_pitcher[12], second[10], SS[9], first[11], SS[10], starting_pitcher[29], catcher[7], SS[11], first[12], starting_pitcher[30], relief_pitcher[13] )
+
+bartolos_df <- data.frame(NO. = Bartolos_votos_picks,
+                          PLAYER = Bartolos_votos_players,
+                          BID_AMOUNT = Bartolos_votos_bids,
+                          stringsAsFactors = FALSE
+                          )
+
+bartolos_df
+Shane_Beliebers_picks <- as.integer(pick_2[115:133])
+
+Shane_Beliebers_bids <- bids[115:133]
+
+Shane_Beliebers_players <- c(SS[12], second[11], second[12], center_field[8], center_field[9], center_field[10],   starting_pitcher[31], starting_pitcher[32], starting_pitcher[33], first[14], second[13], catcher[8], first[15], SS[13], third[10], starting_pitcher[34], starting_pitcher[35], relief_pitcher[14], relief_pitcher[15])
+
+Shane_beliebers_df <- data.frame(NO. = Shane_Beliebers_picks,
+PLAYER = Shane_Beliebers_players,
+BID_AMOUNT = Shane_Beliebers_bids,
+stringsAsFactors = FALSE)
+
+Shane_beliebers_df
+
+A_Rod_picks <- pick_2[134:152]
+
+A_Rod_bids <- bids[134:152]
+
+Sniffers_Row_picks <- pick_2[153:171]
+
+Sniffers_Row_bids <- bids[153:171]
+
+Team_Christy_picks <- pick_2[172:190]
+
+Team_Christy_bids <- bids[172:190]
+
+Long_Ball_picks <- pick_2[191:209]
+
+
+Long_Ball_bids <- bids[191:209]
+
+The_Wright_picks <- pick_2[210:228]
+
+The_Wright_picks
+The_Wright_bids <- bids[210:228]
+The_Wright_bids
