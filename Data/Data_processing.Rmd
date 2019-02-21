@@ -3,6 +3,8 @@ title: "R_docker"
 author: "Andrew Bernauer"
 date: "February 16, 2019"
 output: html_document
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -11,10 +13,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ```{r}
+library(errorist)
 library(tibble)
 library(readr)
 library(stringr)
-path <- "C:\\Users\\andre\\Documents\\Fantasy_app\\draft18.txt"
+path <- "C:\\Users\\andre\\Documents\\Fantasy_app\\data\\draft18.txt"
 parse_it <- read_lines(path)
 
 team_1 <- parse_it[2]
@@ -187,7 +190,7 @@ Shane_Beliebers_picks <- as.integer(pick_2[115:133])
 
 Shane_Beliebers_bids <- bids[115:133]
 
-Shane_Beliebers_players <- c(SS[12], second[11], second[12], center_field[8], center_field[9], center_field[10],   starting_pitcher[31], starting_pitcher[32], starting_pitcher[33], first[14], second[13], catcher[8], first[15], SS[13], third[10], starting_pitcher[34], starting_pitcher[35], relief_pitcher[14], relief_pitcher[15])
+Shane_Beliebers_players <- c(SS[12], second[11], second[12], center_field[8], center_field[9], center_field[10],   starting_pitcher[31], starting_pitcher[32], starting_pitcher[33], first[13], second[13], catcher[8], first[14], SS[13], third[11], starting_pitcher[34], starting_pitcher[35], relief_pitcher[14], relief_pitcher[15])
 
 Shane_beliebers_df <- data.frame(NO. = Shane_Beliebers_picks,
 PLAYER = Shane_Beliebers_players,
@@ -196,15 +199,25 @@ stringsAsFactors = FALSE)
 
 Shane_beliebers_df
 
-A_Rod_picks <- pick_2[134:152]
+A_Rod_picks <- as.integer(pick_2[134:152])
 
 A_Rod_bids <- bids[134:152]
 
-Sniffers_Row_picks <- pick_2[153:171]
+A_Rod_players <- c(first[15], starting_pitcher[36], SS[14], second[14], third[12], third[13], center_field[11], SS[15], left_field[7], catcher[9], left_field[8], third[14], center_field[12], relief_pitcher[16], first[16], starting_pitcher[37],  relief_pitcher[17], RF[8], starting_pitcher[38])
+
+A_Rod_df <- data.frame(NO. =  A_Rod_picks,
+                       PLAYER = A_Rod_players,
+                       BID_AMOUNT = A_Rod_bids,
+                       stringsAsFactors = FALSE)
+
+A_Rod_df
+
+
+Sniffers_Row_picks <- as.integer(pick_2[153:171])
 
 Sniffers_Row_bids <- bids[153:171]
 
-Team_Christy_picks <- pick_2[172:190]
+Team_Christy_picks <- as.integer(pick_2[172:190])
 
 Team_Christy_bids <- bids[172:190]
 
@@ -213,8 +226,21 @@ Long_Ball_picks <- pick_2[191:209]
 
 Long_Ball_bids <- bids[191:209]
 
-The_Wright_picks <- pick_2[210:228]
+The_Wright_picks <- as.integer(pick_2[210:228])
 
 The_Wright_picks
 The_Wright_bids <- bids[210:228]
 The_Wright_bids
+
+LoadToEnvironment <- function(RData, env = new.env()) {
+  load(RData, env)
+  return(env)
+}
+
+saveRDS(Shane_beliebers_df,  file = "beliebers.rds")
+saveRDS(kershank_df, file = "kshank.rds")
+saveRDS(Choo_talkin_df, file = "choo.rds")
+saveRDS(team_beavens_df, file = "beavens.rds")
+saveRDS(tyrone_df, file = "tyrone.rds")
+saveRDS(Mckenna_df, file = "mckenna.rds")
+saveRDS(bartolos_df, file = "bartolos.rds")

@@ -192,10 +192,12 @@ $(document).ready(function () {
 </div>
 
 
+<pre class="r"><code>library(errorist)</code></pre>
+<pre><code>## Warnings and errors will automatically trigger a web search.</code></pre>
 <pre class="r"><code>library(tibble)
 library(readr)
 library(stringr)
-path &lt;- &quot;C:\\Users\\andre\\Documents\\Fantasy_app\\draft18.txt&quot;
+path &lt;- &quot;C:\\Users\\andre\\Documents\\Fantasy_app\\data\\draft18.txt&quot;
 parse_it &lt;- read_lines(path)
 
 team_1 &lt;- parse_it[2]
@@ -794,7 +796,7 @@ bartolos_df</code></pre>
 
 Shane_Beliebers_bids &lt;- bids[115:133]
 
-Shane_Beliebers_players &lt;- c(SS[12], second[11], second[12], center_field[8], center_field[9], center_field[10],   starting_pitcher[31], starting_pitcher[32], starting_pitcher[33], first[14], second[13], catcher[8], first[15], SS[13], third[10], starting_pitcher[34], starting_pitcher[35], relief_pitcher[14], relief_pitcher[15])
+Shane_Beliebers_players &lt;- c(SS[12], second[11], second[12], center_field[8], center_field[9], center_field[10],   starting_pitcher[31], starting_pitcher[32], starting_pitcher[33], first[13], second[13], catcher[8], first[14], SS[13], third[11], starting_pitcher[34], starting_pitcher[35], relief_pitcher[14], relief_pitcher[15])
 
 Shane_beliebers_df &lt;- data.frame(NO. = Shane_Beliebers_picks,
 PLAYER = Shane_Beliebers_players,
@@ -812,25 +814,53 @@ Shane_beliebers_df</code></pre>
 ## 7   64    Luis Severino NYY, SP        $52
 ## 8   68      David Price Bos, SP        $18
 ## 9   71   Jeff Samardzija SF, SP        $12
-## 10 110      Justin Bour LAA, 1B        $10
+## 10 110      Ian Desmond Col, 1B        $10
 ## 11 129     Ozzie Albies Atl, 2B         $6
 ## 12 169      Wilson Ramos NYM, C         $2
-## 13 176       Jose Abreu CWS, 1B         $1
+## 13 176      Justin Bour LAA, 1B         $1
 ## 14 178    Orlando Arcia Mil, SS         $2
-## 15 187   Josh Donaldson Atl, 3B         $1
+## 15 187     Matt Chapman Oak, 3B         $1
 ## 16 196    Lucas Giolito CWS, SP         $1
 ## 17 204    Charlie Morton TB, SP         $1
 ## 18 211     Blake Parker LAA, RP         $1
 ## 19 218     Hector Neris Phi, RP         $1</code></pre>
-<pre class="r"><code>A_Rod_picks &lt;- pick_2[134:152]
+<pre class="r"><code>A_Rod_picks &lt;- as.integer(pick_2[134:152])
 
 A_Rod_bids &lt;- bids[134:152]
 
-Sniffers_Row_picks &lt;- pick_2[153:171]
+A_Rod_players &lt;- c(first[15], starting_pitcher[36], SS[14], second[14], third[12], third[13], center_field[11], SS[15], left_field[7], catcher[9], left_field[8], third[14], center_field[12], relief_pitcher[16], first[16], starting_pitcher[37],  relief_pitcher[17], RF[8], starting_pitcher[38])
+
+A_Rod_df &lt;- data.frame(NO. =  A_Rod_picks,
+                       PLAYER = A_Rod_players,
+                       BID_AMOUNT = A_Rod_bids,
+                       stringsAsFactors = FALSE)
+
+A_Rod_df</code></pre>
+<pre><code>##    NO.                       PLAYER BID_AMOUNT
+## 1    7           Jose Abreu CWS, 1B         $0
+## 2   19          Gerrit Cole Hou, SP         $0
+## 3   40         Corey Seager LAD, SS        $30
+## 4   63          DJ LeMahieu Col, 2B        $20
+## 5   91        Justin Turner LAD, 3B        $26
+## 6   93          Miguel Sano Min, 3B        $18
+## 7   99         Byron Buxton Min, CF         $6
+## 8  102       Didi Gregorius NYY, SS        $20
+## 9  108            Tommy Pham TB, LF        $19
+## 10 115         J.T. Realmuto Mia, C         $7
+## 11 120    Andrew Benintendi Bos, LF        $10
+## 12 125 Nicholas Castellanos Det, 3B        $10
+## 13 145         Manuel Margot SD, CF         $2
+## 14 146      Raisel Iglesias Cin, RP         $2
+## 15 155           Matt Olson Oak, 1B         $4
+## 16 163          Dylan Bundy Bal, SP         $3
+## 17 164         Greg Holland Wsh, RP         $3
+## 18 167         Nomar Mazara Tex, RF         $4
+## 19 186       Michael Fulmer Det, SP         $1</code></pre>
+<pre class="r"><code>Sniffers_Row_picks &lt;- as.integer(pick_2[153:171])
 
 Sniffers_Row_bids &lt;- bids[153:171]
 
-Team_Christy_picks &lt;- pick_2[172:190]
+Team_Christy_picks &lt;- as.integer(pick_2[172:190])
 
 Team_Christy_bids &lt;- bids[172:190]
 
@@ -839,15 +869,27 @@ Long_Ball_picks &lt;- pick_2[191:209]
 
 Long_Ball_bids &lt;- bids[191:209]
 
-The_Wright_picks &lt;- pick_2[210:228]
+The_Wright_picks &lt;- as.integer(pick_2[210:228])
 
 The_Wright_picks</code></pre>
-<pre><code>##  [1] &quot;8&quot;   &quot;20&quot;  &quot;50&quot;  &quot;57&quot;  &quot;60&quot;  &quot;101&quot; &quot;103&quot; &quot;114&quot; &quot;117&quot; &quot;122&quot; &quot;123&quot;
-## [12] &quot;126&quot; &quot;127&quot; &quot;128&quot; &quot;131&quot; &quot;140&quot; &quot;143&quot; &quot;152&quot; &quot;170&quot;</code></pre>
+<pre><code>##  [1]   8  20  50  57  60 101 103 114 117 122 123 126 127 128 131 140 143
+## [18] 152 170</code></pre>
 <pre class="r"><code>The_Wright_bids &lt;- bids[210:228]
 The_Wright_bids</code></pre>
 <pre><code>##  [1] &quot;$0&quot;  &quot;$0&quot;  &quot;$27&quot; &quot;$26&quot; &quot;$25&quot; &quot;$6&quot;  &quot;$10&quot; &quot;$15&quot; &quot;$7&quot;  &quot;$15&quot; &quot;$8&quot; 
 ## [12] &quot;$7&quot;  &quot;$8&quot;  &quot;$20&quot; &quot;$10&quot; &quot;$5&quot;  &quot;$4&quot;  &quot;$3&quot;  &quot;$2&quot;</code></pre>
+<pre class="r"><code>LoadToEnvironment &lt;- function(RData, env = new.env()) {
+  load(RData, env)
+  return(env)
+}
+
+saveRDS(Shane_beliebers_df,  file = &quot;beliebers.rds&quot;)
+saveRDS(kershank_df, file = &quot;kshank.rds&quot;)
+saveRDS(Choo_talkin_df, file = &quot;choo.rds&quot;)
+saveRDS(team_beavens_df, file = &quot;beavens.rds&quot;)
+saveRDS(tyrone_df, file = &quot;tyrone.rds&quot;)
+saveRDS(Mckenna_df, file = &quot;mckenna.rds&quot;)
+saveRDS(bartolos_df, file = &quot;bartolos.rds&quot;)</code></pre>
 
 
 
