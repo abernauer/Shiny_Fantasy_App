@@ -18,6 +18,11 @@ beavens_df <- readRDS(file.choose())
 tyrone_df <- readRDS(file.choose())
 Mckenna_df <- readRDS(file.choose())
 votos_df <- readRDS(file.choose())
+a_rod_df <- readRDS(file.choose())
+sniffers_df <- readRDS(file.choose())
+christy_df <- readRDS(file.choose())
+long_ball_df <- readRDS(file.choose())
+wright_df <- readRDS(file.choose())
 
 # Define UI for application that draws a histogram
 ui <- fluidPage( 
