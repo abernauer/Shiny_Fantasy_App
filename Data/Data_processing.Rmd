@@ -1,5 +1,5 @@
 ---
-title: "R_docker"
+title: "R_Shiny_data_prep"
 author: "Andrew Bernauer"
 date: "February 16, 2019"
 output: html_document
@@ -280,3 +280,8 @@ saveRDS(team_beavens_df, file = "beavens.rds")
 saveRDS(tyrone_df, file = "tyrone.rds")
 saveRDS(Mckenna_df, file = "mckenna.rds")
 saveRDS(bartolos_df, file = "bartolos.rds")
+saveRDS(A_Rod_df, file = "ARod.rds")
+saveRDS(Sniffers_Row_df, file = "Sniffersrow.rds")
+saveRDS(Team_Christy_df, file = "Team_christy.rds")
+saveRDS(Long_Ball_df, file = "Long_Ball.rds")
+saveRDS(The_Wright_Player_df, file = "The_Wright.rds")
