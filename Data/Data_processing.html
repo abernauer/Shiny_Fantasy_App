@@ -664,7 +664,7 @@ picks_beavens</code></pre>
 ## [18] 223 226</code></pre>
 <pre class="r"><code>bids_beavens &lt;- bids[39:57]
 
-players_beavens &lt;- c(SS[3], starting_pitcher[11], relief_pitcher[6], third[5], catcher[3], left_field[3], SS[4], starting_pitcher[12], starting_pitcher[13], center_field[4], first[4], second[5], first[5], relief_pitcher[7], left_field[4], designated_hitter[2], SS[5], starting_pitcher[14], RF[4])
+players_beavens &lt;- c(SS[3], starting_pitcher[11], relief_pitcher[6], third[5], catcher[3], left_field[3], SS[4], starting_pitcher[12], starting_pitcher[13], center_field[4], first[4], second[5], first[5], relief_pitcher[7], left_field[4], designated_hitter[1], SS[5], starting_pitcher[14], RF[4])
 
 team_beavens_df &lt;- data.frame(NO. = picks_beavens, 
                               PLAYER = players_beavens, 
@@ -688,7 +688,7 @@ team_beavens_df</code></pre>
 ## 13 184    Trey Mancini Bal, 1B         $1
 ## 14 195   Andrew Miller StL, RP         $1
 ## 15 203  Kyle Schwarber ChC, LF         $1
-## 16 210     Nelson Cruz Min, DH         $1
+## 16 210 Kendrys Morales Tor, DH         $1
 ## 17 217   Jorge Polanco Min, SS         $1
 ## 18 223     Kenta Maeda LAD, SP         $1
 ## 19 226      Max Kepler Min, RF         $1</code></pre>
@@ -860,16 +860,101 @@ A_Rod_df</code></pre>
 
 Sniffers_Row_bids &lt;- bids[153:171]
 
-Team_Christy_picks &lt;- as.integer(pick_2[172:190])
+Sniffers_Row_players &lt;- c(third[15], RF[9], RF[10], starting_pitcher[39], starting_pitcher[40], first[17], starting_pitcher[41], starting_pitcher[42], starting_pitcher[43], first[18], RF[11], RF[12], relief_pitcher[18], starting_pitcher[44], relief_pitcher[19], SS[16], second[15], SS[17], catcher[10])
+
+Sniffers_Row_df &lt;- data.frame(NO. = Sniffers_Row_picks,
+                              PLAYER = Sniffers_Row_players,
+                              BID_AMOUNT = Sniffers_Row_bids, 
+                              stringsAsFactors = FALSE)
+
+Sniffers_Row_df</code></pre>
+<pre><code>##    NO.                    PLAYER BID_AMOUNT
+## 1    4     Nolan Arenado Col, 3B         $0
+## 2   16 Giancarlo Stanton NYY, RF         $0
+## 3   30       Aaron Judge NYY, RF        $42
+## 4   31  Madison Bumgarner SF, SP        $46
+## 5   34 Stephen Strasburg Wsh, SP        $47
+## 6   81    Miguel Cabrera Det, 1B        $12
+## 7   88    Kyle Hendricks ChC, SP        $24
+## 8  112      Jose Berrios Min, SP         $7
+## 9  124     Luis Castillo Cin, SP        $10
+## 10 160      Justin Smoak Tor, 1B         $3
+## 11 183  Steven Souza Jr. Ari, RF         $1
+## 12 194      Josh Reddick Hou, RF         $1
+## 13 202      Mark Melancon SF, RP         $1
+## 14 209     Danny Salazar Cle, SP         $1
+## 15 216    Archie Bradley Ari, RP         $1
+## 16 222      Tim Anderson CWS, SS         $1
+## 17 225      Jason Kipnis Cle, 2B         $1
+## 18 227     Marcus Semien Oak, SS         $1
+## 19 228       Brian McCann Atl, C         $1</code></pre>
+<pre class="r"><code>Team_Christy_picks &lt;- as.integer(pick_2[172:190])
 
 Team_Christy_bids &lt;- bids[172:190]
 
-Long_Ball_picks &lt;- pick_2[191:209]
+Team_Christy_players &lt;- c(first[19], left_field[9], starting_pitcher[45], SS[18], starting_pitcher[46], starting_pitcher[47], second[16], third[16], center_field[13], center_field[14], SS[19], relief_pitcher[20], first[20], starting_pitcher[48], RF[13], starting_pitcher[49], left_field[10], relief_pitcher[21], catcher[11])
+
+Team_Christy_df &lt;- data.frame(NO. = Team_Christy_picks,
+                              PLAYER = Team_Christy_players,
+                              BID_AMOUNT = Team_Christy_bids,
+                              stringsAsFactors = FALSE
+                              
+                              )
+
+Team_Christy_df</code></pre>
+<pre><code>##    NO.                    PLAYER BID_AMOUNT
+## 1    2  Paul Goldschmidt StL, 1B         $0
+## 2   14       Khris Davis Oak, LF         $0
+## 3   35       Luke Weaver Ari, SP        $15
+## 4   36     Carlos Correa Hou, SS        $39
+## 5   42     Bartolo Colon Tex, SP         $2
+## 6   47        Sonny Gray NYY, SP        $18
+## 7   52        Dee Gordon Sea, 2B        $29
+## 8   86    Mike Moustakas Mil, 3B        $18
+## 9   98  Andrew McCutchen Phi, CF        $17
+## 10 113        Adam Jones Bal, CF        $15
+## 11 121      Trevor Story Col, SS         $9
+## 12 139        Edwin Diaz NYM, RP         $4
+## 13 158       Chris Davis Bal, 1B         $3
+## 14 159       Zack Godley Ari, SP         $3
+## 15 162   Gregory Polanco Pit, RF         $3
+## 16 165    Marcus Stroman Tor, SP         $3
+## 17 168     Brett Gardner NYY, LF         $2
+## 18 181    Jeurys Familia NYM, RP         $1
+## 19 192 Welington Castillo CWS, C         $1</code></pre>
+<pre class="r"><code>Long_Ball_picks &lt;- as.integer(pick_2[191:209])
 
 
 Long_Ball_bids &lt;- bids[191:209]
 
-The_Wright_picks &lt;- as.integer(pick_2[210:228])
+Long_Ball_players &lt;- c(second[17], designated_hitter[2], first[21], first[22], starting_pitcher[50], starting_pitcher[51], relief_pitcher[22], starting_pitcher[52], left_field[11], left_field[12], SS[20], relief_pitcher[23], starting_pitcher[53], third[17], left_field[13], second[18], first[23], starting_pitcher[54], catcher[12] )
+
+Long_Ball_df &lt;- data.frame(NO. = Long_Ball_picks, 
+                           PLAYER = Long_Ball_players,
+                           BID_AMOUNT = Long_Ball_bids,
+                           stringsAsFactors = FALSE)
+Long_Ball_df</code></pre>
+<pre><code>##    NO.                      PLAYER BID_AMOUNT
+## 1    6         Jose Altuve Hou, 2B         $0
+## 2   18         Nelson Cruz Min, DH         $0
+## 3   28       Anthony Rizzo ChC, 1B        $34
+## 4   51            Wil Myers SD, 1B        $16
+## 5   66          Aaron Nola Phi, SP        $21
+## 6   76        Jacob deGrom NYM, SP        $51
+## 7   78       Roberto Osuna Hou, RP         $9
+## 8   83       Jose Quintana ChC, SP        $19
+## 9   90    Delino DeShields Tex, LF         $6
+## 10  96      Starling Marte Pit, LF         $9
+## 11 119         Paul DeJong StL, SS         $7
+## 12 138         Alex Colome CWS, RP         $3
+## 13 144 Lance McCullers Jr. Hou, SP         $3
+## 14 150       Rafael Devers Bos, 3B         $6
+## 15 172         Adam Duvall Atl, LF         $2
+## 16 173            Ian Happ ChC, 2B         $2
+## 17 174           Greg Bird NYY, 1B         $1
+## 18 175         Johnny Cueto SF, SP         $3
+## 19 185           Mike Zunino TB, C         $1</code></pre>
+<pre class="r"><code>The_Wright_picks &lt;- as.integer(pick_2[210:228])
 
 The_Wright_picks</code></pre>
 <pre><code>##  [1]   8  20  50  57  60 101 103 114 117 122 123 126 127 128 131 140 143
@@ -878,6 +963,33 @@ The_Wright_picks</code></pre>
 The_Wright_bids</code></pre>
 <pre><code>##  [1] &quot;$0&quot;  &quot;$0&quot;  &quot;$27&quot; &quot;$26&quot; &quot;$25&quot; &quot;$6&quot;  &quot;$10&quot; &quot;$15&quot; &quot;$7&quot;  &quot;$15&quot; &quot;$8&quot; 
 ## [12] &quot;$7&quot;  &quot;$8&quot;  &quot;$20&quot; &quot;$10&quot; &quot;$5&quot;  &quot;$4&quot;  &quot;$3&quot;  &quot;$2&quot;</code></pre>
+<pre class="r"><code>The_Wright_Player &lt;- c(RF[14], center_field[15], starting_pitcher[55], first[24], starting_pitcher[56], first[25], third[18], SS[21], starting_pitcher[57], left_field[14], catcher[13], SS[22], starting_pitcher[58], second[19], center_field[16], third[19], relief_pitcher[24], center_field[17], relief_pitcher[25])
+
+The_Wright_Player_df &lt;- data.frame(NO. = The_Wright_picks,
+                                   PLAYER = The_Wright_Player,
+                                   BID_AMOUNT = The_Wright_bids,
+                                   stringsAsFactors = FALSE)
+The_Wright_Player_df</code></pre>
+<pre><code>##    NO.                  PLAYER BID_AMOUNT
+## 1    8   J.D. Martinez Bos, RF         $0
+## 2   20 George Springer Hou, CF         $0
+## 3   50      Yu Darvish ChC, SP        $27
+## 4   57    Rhys Hoskins Phi, 1B        $26
+## 5   60    Zack Greinke Ari, SP        $25
+## 6  101     Eric Thames Mil, 1B         $6
+## 7  103   Adrian Beltre Tex, 3B        $10
+## 8  114 Xander Bogaerts Bos, SS        $15
+## 9  117 Masahiro Tanaka NYY, SP         $7
+## 10 122 Yoenis Cespedes NYM, LF        $15
+## 11 123      Evan Gattis Hou, C         $8
+## 12 126     Jean Segura Phi, SS         $7
+## 13 127      Lance Lynn Tex, SP         $8
+## 14 128   Daniel Murphy Col, 2B        $20
+## 15 131    Lorenzo Cain Mil, CF        $10
+## 16 140    Todd Frazier NYM, 3B         $5
+## 17 143       Ken Giles Tor, RP         $4
+## 18 152      Adam Eaton Wsh, CF         $3
+## 19 170 Arodys Vizcaino Atl, RP         $2</code></pre>
 <pre class="r"><code>LoadToEnvironment &lt;- function(RData, env = new.env()) {
   load(RData, env)
   return(env)

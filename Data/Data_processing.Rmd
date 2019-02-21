@@ -136,7 +136,7 @@ picks_beavens
 
 bids_beavens <- bids[39:57]
 
-players_beavens <- c(SS[3], starting_pitcher[11], relief_pitcher[6], third[5], catcher[3], left_field[3], SS[4], starting_pitcher[12], starting_pitcher[13], center_field[4], first[4], second[5], first[5], relief_pitcher[7], left_field[4], designated_hitter[2], SS[5], starting_pitcher[14], RF[4])
+players_beavens <- c(SS[3], starting_pitcher[11], relief_pitcher[6], third[5], catcher[3], left_field[3], SS[4], starting_pitcher[12], starting_pitcher[13], center_field[4], first[4], second[5], first[5], relief_pitcher[7], left_field[4], designated_hitter[1], SS[5], starting_pitcher[14], RF[4])
 
 team_beavens_df <- data.frame(NO. = picks_beavens, 
                               PLAYER = players_beavens, 
@@ -217,20 +217,56 @@ Sniffers_Row_picks <- as.integer(pick_2[153:171])
 
 Sniffers_Row_bids <- bids[153:171]
 
+Sniffers_Row_players <- c(third[15], RF[9], RF[10], starting_pitcher[39], starting_pitcher[40], first[17], starting_pitcher[41], starting_pitcher[42], starting_pitcher[43], first[18], RF[11], RF[12], relief_pitcher[18], starting_pitcher[44], relief_pitcher[19], SS[16], second[15], SS[17], catcher[10])
+
+Sniffers_Row_df <- data.frame(NO. = Sniffers_Row_picks,
+                              PLAYER = Sniffers_Row_players,
+                              BID_AMOUNT = Sniffers_Row_bids, 
+                              stringsAsFactors = FALSE)
+
+Sniffers_Row_df
+
 Team_Christy_picks <- as.integer(pick_2[172:190])
 
 Team_Christy_bids <- bids[172:190]
 
-Long_Ball_picks <- pick_2[191:209]
+Team_Christy_players <- c(first[19], left_field[9], starting_pitcher[45], SS[18], starting_pitcher[46], starting_pitcher[47], second[16], third[16], center_field[13], center_field[14], SS[19], relief_pitcher[20], first[20], starting_pitcher[48], RF[13], starting_pitcher[49], left_field[10], relief_pitcher[21], catcher[11])
+
+Team_Christy_df <- data.frame(NO. = Team_Christy_picks,
+                              PLAYER = Team_Christy_players,
+                              BID_AMOUNT = Team_Christy_bids,
+                              stringsAsFactors = FALSE
+                              
+                              )
+
+Team_Christy_df
+Long_Ball_picks <- as.integer(pick_2[191:209])
 
 
 Long_Ball_bids <- bids[191:209]
+
+Long_Ball_players <- c(second[17], designated_hitter[2], first[21], first[22], starting_pitcher[50], starting_pitcher[51], relief_pitcher[22], starting_pitcher[52], left_field[11], left_field[12], SS[20], relief_pitcher[23], starting_pitcher[53], third[17], left_field[13], second[18], first[23], starting_pitcher[54], catcher[12] )
+
+Long_Ball_df <- data.frame(NO. = Long_Ball_picks, 
+                           PLAYER = Long_Ball_players,
+                           BID_AMOUNT = Long_Ball_bids,
+                           stringsAsFactors = FALSE)
+Long_Ball_df
+
 
 The_Wright_picks <- as.integer(pick_2[210:228])
 
 The_Wright_picks
 The_Wright_bids <- bids[210:228]
 The_Wright_bids
+
+The_Wright_Player <- c(RF[14], center_field[15], starting_pitcher[55], first[24], starting_pitcher[56], first[25], third[18], SS[21], starting_pitcher[57], left_field[14], catcher[13], SS[22], starting_pitcher[58], second[19], center_field[16], third[19], relief_pitcher[24], center_field[17], relief_pitcher[25])
+
+The_Wright_Player_df <- data.frame(NO. = The_Wright_picks,
+                                   PLAYER = The_Wright_Player,
+                                   BID_AMOUNT = The_Wright_bids,
+                                   stringsAsFactors = FALSE)
+The_Wright_Player_df
 
 LoadToEnvironment <- function(RData, env = new.env()) {
   load(RData, env)
