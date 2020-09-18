@@ -1,26 +1,26 @@
 library(shiny)
-library(readr)
+library(DT)
 
 
 # load in all our R objects for the dataframes
-shane_df <- readRDS(file = "/home/andrew/Documents/Shiny_Fantasy_App/Data/beliebers.rds")
-redemption_df <- readRDS(file = "/home/andrew/Documents/Shiny_Fantasy_App/Data/kshank.rds")
-choo_df <- readRDS(file = "/home/andrew/Documents/Shiny_Fantasy_App/Data/choo.rds")
-beavens_df <- readRDS(file = "/home/andrew/Documents/Shiny_Fantasy_App/Data/beavens.rds")
-tyrone_df <- readRDS(file = "/home/andrew/Documents/Shiny_Fantasy_App/Data/tyrone.rds")
-Mckenna_df <- readRDS(file = "/home/andrew/Documents/Shiny_Fantasy_App/Data/mckenna.rds")
-votos_df <- readRDS(file = "/home/andrew/Documents/Shiny_Fantasy_App/Data/bartolos.rds")
-a_rod_df <- readRDS(file = "/home/andrew/Documents/Shiny_Fantasy_App/Data/ARod.rds")
-sniffers_df <- readRDS(file = "/home/andrew/Documents/Shiny_Fantasy_App/Data/Sniffersrow.rds")
-christy_df <- readRDS(file = "/home/andrew/Documents/Shiny_Fantasy_App/Data/Team_christy.rds")
-long_ball_df <- readRDS(file = "/home/andrew/Documents/Shiny_Fantasy_App/Data/Long_Ball.rds")
-wright_df <- readRDS(file = "/home/andrew/Documents/Shiny_Fantasy_App/Data/The_Wright.rds")
+shane_df <- readRDS(file = "Data/beliebers.rds")
+redemption_df <- readRDS(file = "Data/kshank.rds")
+choo_df <- readRDS(file = "Data/choo.rds")
+beavens_df <- readRDS(file = "Data/beavens.rds")
+tyrone_df <- readRDS(file = "Data/tyrone.rds")
+Mckenna_df <- readRDS(file = "Data/mckenna.rds")
+votos_df <- readRDS(file = "Data/bartolos.rds")
+a_rod_df <- readRDS(file = "Data/ARod.rds")
+sniffers_df <- readRDS(file = "Data/Sniffersrow.rds")
+christy_df <- readRDS(file = "Data/Team_christy.rds")
+long_ball_df <- readRDS(file = "Data/Long_Ball.rds")
+wright_df <- readRDS(file = "Data/The_Wright.rds")
 
 # Define UI for application that supplies interactive data tables
 ui <- fluidPage( 
   titlePanel("An app for displaying Fantasy draft results "),
   sidebarLayout(sidebarPanel(helpText("Create a datatable for fantasy draft results based on team. Note that the dashboard only permits one table at a time"),
-                              checkboxGroupInput("team", "Choose a team:", choices = c("Kershawshank Redemption", "Choo Talkin to Me?", "Team Beavens", "I'am Tyrone",
+                              radioButtons("team", "Choose a team:", choices = c("Kershawshank Redemption", "Choo Talkin to Me?", "Team Beavens", "I'am Tyrone",
                                                                                        "Team Mckenna", "Bartolos Votos", "Shane Beliebers", "A Rod", "Sniffer's Row", "Team Christy", "Long Ball", "The Wright Players"), selected = "Shane Beliebers")
                               
                               
