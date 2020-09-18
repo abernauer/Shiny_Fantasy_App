@@ -1,34 +1,27 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
-
 library(shiny)
 library(readr)
 
 
-shane_df <- readRDS(file.choose())
-redemption_df <- readRDS(file.choose())
-choo_df <- readRDS(file.choose())
-beavens_df <- readRDS(file.choose())
-tyrone_df <- readRDS(file.choose())
-Mckenna_df <- readRDS(file.choose())
-votos_df <- readRDS(file.choose())
-a_rod_df <- readRDS(file.choose())
-sniffers_df <- readRDS(file.choose())
-christy_df <- readRDS(file.choose())
-long_ball_df <- readRDS(file.choose())
-wright_df <- readRDS(file.choose())
+# load in all our R objects for the dataframes
+shane_df <- readRDS(file = "/home/andrew/Documents/Shiny_Fantasy_App/Data/beliebers.rds")
+redemption_df <- readRDS(file = "/home/andrew/Documents/Shiny_Fantasy_App/Data/kshank.rds")
+choo_df <- readRDS(file = "/home/andrew/Documents/Shiny_Fantasy_App/Data/choo.rds")
+beavens_df <- readRDS(file = "/home/andrew/Documents/Shiny_Fantasy_App/Data/beavens.rds")
+tyrone_df <- readRDS(file = "/home/andrew/Documents/Shiny_Fantasy_App/Data/tyrone.rds")
+Mckenna_df <- readRDS(file = "/home/andrew/Documents/Shiny_Fantasy_App/Data/mckenna.rds")
+votos_df <- readRDS(file = "/home/andrew/Documents/Shiny_Fantasy_App/Data/bartolos.rds")
+a_rod_df <- readRDS(file = "/home/andrew/Documents/Shiny_Fantasy_App/Data/ARod.rds")
+sniffers_df <- readRDS(file = "/home/andrew/Documents/Shiny_Fantasy_App/Data/Sniffersrow.rds")
+christy_df <- readRDS(file = "/home/andrew/Documents/Shiny_Fantasy_App/Data/Team_christy.rds")
+long_ball_df <- readRDS(file = "/home/andrew/Documents/Shiny_Fantasy_App/Data/Long_Ball.rds")
+wright_df <- readRDS(file = "/home/andrew/Documents/Shiny_Fantasy_App/Data/The_Wright.rds")
 
-# Define UI for application that draws a histogram
+# Define UI for application that supplies interactive data tables
 ui <- fluidPage( 
   titlePanel("An app for displaying Fantasy draft results "),
-  sidebarLayout(sidebarPanel( helpText("Create a datatable for fantasy draft results based on team"),
-                              checkboxGroupInput("team", "Choose a team:", choices = c("Kershawshank Redemption", "Choo Talkin to Me?", "Team Beavens", "I'am Tyrone", "Team Mckenna", "Bartolos Votos", "Shane Beliebers", "A Rod", "Sniffer's Row", "Team Christy", "Long Ball", "The Wright Players"), selected = "Shane Beliebers")
+  sidebarLayout(sidebarPanel(helpText("Create a datatable for fantasy draft results based on team. Note that the dashboard only permits one table at a time"),
+                              checkboxGroupInput("team", "Choose a team:", choices = c("Kershawshank Redemption", "Choo Talkin to Me?", "Team Beavens", "I'am Tyrone",
+                                                                                       "Team Mckenna", "Bartolos Votos", "Shane Beliebers", "A Rod", "Sniffer's Row", "Team Christy", "Long Ball", "The Wright Players"), selected = "Shane Beliebers")
                               
                               
                 
@@ -48,7 +41,7 @@ ui <- fluidPage(
 
 
 
-# Define server logic required to draw a histogram
+# Define server logic required to draw interactive data tables
 server <- function(input, output) {
 
 output$table <- DT::renderDataTable(
