@@ -20,6 +20,11 @@ git clone https://github.com/abernauer/Shiny_Fantasy_App.git
 
 ## Usage
 
+Assuming you have the Rstudio ide installed open the project you just cloned.
+After opening the project within Rstudio click the ui button on the App.R file labeled run app.
+
+The app should look like this ![myapp](appcap.png)
+
 
 ## Resources
 For more info on [shiny](http://shiny.rstudio.com/).
